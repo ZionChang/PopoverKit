@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2C55521EBF4CCB00E31783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55511EBF4CCB00E31783 /* AppDelegate.swift */; };
-		3A2C55541EBF4CCB00E31783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55531EBF4CCB00E31783 /* ViewController.swift */; };
-		3A2C55571EBF4CCB00E31783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55551EBF4CCB00E31783 /* Main.storyboard */; };
-		3A2C55591EBF4CCB00E31783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55581EBF4CCB00E31783 /* Assets.xcassets */; };
-		3A2C555C1EBF4CCB00E31783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C555A1EBF4CCB00E31783 /* LaunchScreen.storyboard */; };
-		3A4C68301EBF493700C1FECF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A4C68271EBF493700C1FECF /* Info.plist */; };
+		3A2C556C1EBF4DA100E31783 /* AjustFontPopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55611EBF4DA100E31783 /* AjustFontPopoverCell.swift */; };
+		3A2C556D1EBF4DA100E31783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55621EBF4DA100E31783 /* AppDelegate.swift */; };
+		3A2C556E1EBF4DA100E31783 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55631EBF4DA100E31783 /* Info.plist */; };
+		3A2C556F1EBF4DA100E31783 /* NormalPopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55641EBF4DA100E31783 /* NormalPopoverCell.swift */; };
+		3A2C55701EBF4DA100E31783 /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55651EBF4DA100E31783 /* PopoverTableViewController.swift */; };
+		3A2C55711EBF4DA100E31783 /* PureTextPopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55661EBF4DA100E31783 /* PureTextPopoverCell.swift */; };
+		3A2C55721EBF4DA100E31783 /* ReusableCellHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55671EBF4DA100E31783 /* ReusableCellHandle.swift */; };
+		3A2C55731EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55681EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift */; };
+		3A2C55741EBF4DA100E31783 /* UIColor+BooklnUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55691EBF4DA100E31783 /* UIColor+BooklnUI.swift */; };
+		3A2C55751EBF4DA100E31783 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C556A1EBF4DA100E31783 /* UIColor+Extension.swift */; };
+		3A2C55761EBF4DA100E31783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C556B1EBF4DA100E31783 /* ViewController.swift */; };
+		3A2C557B1EBF4DEA00E31783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55771EBF4DEA00E31783 /* LaunchScreen.storyboard */; };
+		3A2C557C1EBF4DEA00E31783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55791EBF4DEA00E31783 /* Main.storyboard */; };
+		3A2C557E1EBF4E0C00E31783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C557D1EBF4E0C00E31783 /* Assets.xcassets */; };
 		3A4C68311EBF493700C1FECF /* Popover+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C68281EBF493700C1FECF /* Popover+UIView.swift */; };
 		3A4C68321EBF493700C1FECF /* Popover+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C68291EBF493700C1FECF /* Popover+UIViewController.swift */; };
 		3A4C68331EBF493700C1FECF /* PopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C682A1EBF493700C1FECF /* PopoverBackgroundView.swift */; };
@@ -21,16 +29,26 @@
 		3A4C68361EBF493700C1FECF /* PopoverKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4C682D1EBF493700C1FECF /* PopoverKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A4C68371EBF493700C1FECF /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C682E1EBF493700C1FECF /* PopoverPresentationController.swift */; };
 		3A4C68381EBF493700C1FECF /* PopoverTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C682F1EBF493700C1FECF /* PopoverTransitioningDelegate.swift */; };
+		5A48EDC46C2AECC8536FCDA9 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F536F140E8F1B07EB73A5C8C /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319130854AB9CE963E9E5639 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		3A2C554F1EBF4CCB00E31783 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A2C55511EBF4CCB00E31783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A2C55531EBF4CCB00E31783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A2C55561EBF4CCB00E31783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A2C55581EBF4CCB00E31783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A2C555B1EBF4CCB00E31783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3A2C555D1EBF4CCB00E31783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2C55611EBF4DA100E31783 /* AjustFontPopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustFontPopoverCell.swift; sourceTree = "<group>"; };
+		3A2C55621EBF4DA100E31783 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A2C55631EBF4DA100E31783 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2C55641EBF4DA100E31783 /* NormalPopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalPopoverCell.swift; sourceTree = "<group>"; };
+		3A2C55651EBF4DA100E31783 /* PopoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
+		3A2C55661EBF4DA100E31783 /* PureTextPopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PureTextPopoverCell.swift; sourceTree = "<group>"; };
+		3A2C55671EBF4DA100E31783 /* ReusableCellHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellHandle.swift; sourceTree = "<group>"; };
+		3A2C55681EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedBackgroundBottomLinePresenter.swift; sourceTree = "<group>"; };
+		3A2C55691EBF4DA100E31783 /* UIColor+BooklnUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+BooklnUI.swift"; sourceTree = "<group>"; };
+		3A2C556A1EBF4DA100E31783 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3A2C556B1EBF4DA100E31783 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A2C55781EBF4DEA00E31783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A2C557A1EBF4DEA00E31783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A2C557D1EBF4E0C00E31783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A4C680D1EBF48FF00C1FECF /* PopoverKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopoverKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4C68271EBF493700C1FECF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4C68281EBF493700C1FECF /* Popover+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Popover+UIView.swift"; sourceTree = "<group>"; };
@@ -41,6 +59,8 @@
 		3A4C682D1EBF493700C1FECF /* PopoverKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverKit.h; sourceTree = "<group>"; };
 		3A4C682E1EBF493700C1FECF /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
 		3A4C682F1EBF493700C1FECF /* PopoverTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTransitioningDelegate.swift; sourceTree = "<group>"; };
+		5CBD1F93DCCB2F8DD3C971D8 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F536F140E8F1B07EB73A5C8C /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A48EDC46C2AECC8536FCDA9 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +85,20 @@
 		3A2C55501EBF4CCB00E31783 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				3A2C55511EBF4CCB00E31783 /* AppDelegate.swift */,
-				3A2C55531EBF4CCB00E31783 /* ViewController.swift */,
-				3A2C55551EBF4CCB00E31783 /* Main.storyboard */,
-				3A2C55581EBF4CCB00E31783 /* Assets.xcassets */,
-				3A2C555A1EBF4CCB00E31783 /* LaunchScreen.storyboard */,
-				3A2C555D1EBF4CCB00E31783 /* Info.plist */,
+				3A2C557D1EBF4E0C00E31783 /* Assets.xcassets */,
+				3A2C55771EBF4DEA00E31783 /* LaunchScreen.storyboard */,
+				3A2C55791EBF4DEA00E31783 /* Main.storyboard */,
+				3A2C55611EBF4DA100E31783 /* AjustFontPopoverCell.swift */,
+				3A2C55621EBF4DA100E31783 /* AppDelegate.swift */,
+				3A2C55631EBF4DA100E31783 /* Info.plist */,
+				3A2C55641EBF4DA100E31783 /* NormalPopoverCell.swift */,
+				3A2C55651EBF4DA100E31783 /* PopoverTableViewController.swift */,
+				3A2C55661EBF4DA100E31783 /* PureTextPopoverCell.swift */,
+				3A2C55671EBF4DA100E31783 /* ReusableCellHandle.swift */,
+				3A2C55681EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift */,
+				3A2C55691EBF4DA100E31783 /* UIColor+BooklnUI.swift */,
+				3A2C556A1EBF4DA100E31783 /* UIColor+Extension.swift */,
+				3A2C556B1EBF4DA100E31783 /* ViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -80,6 +109,8 @@
 				3A4C68261EBF493700C1FECF /* Sources */,
 				3A2C55501EBF4CCB00E31783 /* Demo */,
 				3A4C680E1EBF48FF00C1FECF /* Products */,
+				DFFBFEAAB15638A666DF4DF1 /* Pods */,
+				4CA9ECCB43B38E09212EE377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +139,23 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		4CA9ECCB43B38E09212EE377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F536F140E8F1B07EB73A5C8C /* Pods_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFFBFEAAB15638A666DF4DF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				319130854AB9CE963E9E5639 /* Pods-Demo.debug.xcconfig */,
+				5CBD1F93DCCB2F8DD3C971D8 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -126,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A2C55601EBF4CCB00E31783 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				076838126414AA79703A03BE /* [CP] Check Pods Manifest.lock */,
 				3A2C554B1EBF4CCB00E31783 /* Sources */,
 				3A2C554C1EBF4CCB00E31783 /* Frameworks */,
 				3A2C554D1EBF4CCB00E31783 /* Resources */,
+				5050DE425AE738519CE56339 /* [CP] Embed Pods Frameworks */,
+				E707AF38561025E0A3678BC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +220,7 @@
 					3A2C554E1EBF4CCB00E31783 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 997L955686;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					3A4C680C1EBF48FF00C1FECF = {
@@ -203,9 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2C555C1EBF4CCB00E31783 /* LaunchScreen.storyboard in Resources */,
-				3A2C55591EBF4CCB00E31783 /* Assets.xcassets in Resources */,
-				3A2C55571EBF4CCB00E31783 /* Main.storyboard in Resources */,
+				3A2C557C1EBF4DEA00E31783 /* Main.storyboard in Resources */,
+				3A2C556E1EBF4DA100E31783 /* Info.plist in Resources */,
+				3A2C557E1EBF4E0C00E31783 /* Assets.xcassets in Resources */,
+				3A2C557B1EBF4DEA00E31783 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,19 +266,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4C68301EBF493700C1FECF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		076838126414AA79703A03BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5050DE425AE738519CE56339 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E707AF38561025E0A3678BC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A2C554B1EBF4CCB00E31783 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2C55541EBF4CCB00E31783 /* ViewController.swift in Sources */,
-				3A2C55521EBF4CCB00E31783 /* AppDelegate.swift in Sources */,
+				3A2C55761EBF4DA100E31783 /* ViewController.swift in Sources */,
+				3A2C55721EBF4DA100E31783 /* ReusableCellHandle.swift in Sources */,
+				3A2C556D1EBF4DA100E31783 /* AppDelegate.swift in Sources */,
+				3A2C55731EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift in Sources */,
+				3A2C55751EBF4DA100E31783 /* UIColor+Extension.swift in Sources */,
+				3A2C55711EBF4DA100E31783 /* PureTextPopoverCell.swift in Sources */,
+				3A2C55741EBF4DA100E31783 /* UIColor+BooklnUI.swift in Sources */,
+				3A2C556F1EBF4DA100E31783 /* NormalPopoverCell.swift in Sources */,
+				3A2C55701EBF4DA100E31783 /* PopoverTableViewController.swift in Sources */,
+				3A2C556C1EBF4DA100E31783 /* AjustFontPopoverCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,20 +354,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A2C55551EBF4CCB00E31783 /* Main.storyboard */ = {
+		3A2C55771EBF4DEA00E31783 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3A2C55561EBF4CCB00E31783 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A2C555A1EBF4CCB00E31783 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A2C555B1EBF4CCB00E31783 /* Base */,
+				3A2C55781EBF4DEA00E31783 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A2C55791EBF4DEA00E31783 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A2C557A1EBF4DEA00E31783 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -267,6 +375,7 @@
 /* Begin XCBuildConfiguration section */
 		3A2C555E1EBF4CCB00E31783 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319130854AB9CE963E9E5639 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -325,6 +434,7 @@
 		};
 		3A2C555F1EBF4CCB00E31783 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBD1F93DCCB2F8DD3C971D8 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -525,6 +635,7 @@
 				3A2C555F1EBF4CCB00E31783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A4C68051EBF48E000C1FECF /* Build configuration list for PBXProject "PopoverKit" */ = {
 			isa = XCConfigurationList;
