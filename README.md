@@ -42,8 +42,8 @@ present(myPopooverViewController, animated: true, completion: nil)
  
 // Get the popover presentation controller and configure it.
 let presentationController = myPopooverViewController.popoverPresentationController
-        presentationController?.sourceView = myView
-        presentationController?.sourceRect = sourceRect
+presentationController?.sourceView = myView
+presentationController?.sourceRect = sourceRect
 ```
 
 As you see, so esay, just like system
@@ -93,7 +93,7 @@ To get the full benefits import `PopoverKit`
 import PopoverKit
 ```
 
-###CocoaPods
+### CocoaPods
 
 You can use [CocoaPods](http://cocoapods.org/) to install `PopoverKit` by adding it to your `Podfile`:
 
