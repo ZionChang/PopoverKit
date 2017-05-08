@@ -113,7 +113,9 @@ $ pod install
 1. Download and drop ```PopoverKit``` in your project.  
 2. Congratulations!  
 
+## TODO
 
+- [] Ability to customize animation
 
 
 
