@@ -101,18 +101,18 @@ private extension AjustFontPopoverCell {
         
         mediumButton.snp.makeConstraints {
             $0.top.bottom.equalToSuperview()
-            $0.leading.equalToSuperview().offset(12)
+            $0.leading.equalToSuperview().offset(12).priority(900)
         }
         
         largeButton.snp.makeConstraints {
-            $0.leading.equalTo(mediumButton.snp.trailing).offset(20)
+            $0.leading.equalTo(mediumButton.snp.trailing).offset(20).priority(900)
             $0.top.bottom.width.equalTo(mediumButton)
         }
         
         extraLargeButton.snp.makeConstraints {
-            $0.leading.equalTo(largeButton.snp.trailing).offset(20)
+            $0.leading.equalTo(largeButton.snp.trailing).offset(20).priority(900)
             $0.top.bottom.width.equalTo(largeButton)
-            $0.trailing.equalToSuperview().offset(-12)
+            $0.trailing.equalToSuperview().offset(-12).priority(900)
         }
         
         setupLineView()

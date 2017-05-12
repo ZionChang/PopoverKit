@@ -33,8 +33,8 @@ extension SelectedBackgroundBottomLinePresenter where Self: UITableViewCell {
         lineView.snp.makeConstraints {
             $0.height.equalTo(1)
             $0.bottom.equalToSuperview().offset(-0.5)
-            $0.leading.equalToSuperview().offset(12)
-            $0.trailing.equalToSuperview().offset(-12)
+            $0.leading.equalToSuperview().offset(12).priority(900)
+            $0.trailing.equalToSuperview().offset(-12).priority(900)
         }
         selectedBackgroundView = view
     }

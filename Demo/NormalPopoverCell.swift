@@ -40,8 +40,8 @@ private extension NormalPopoverCell {
         contentView.addSubview(containerView)
         
         containerView.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(12)
-            $0.trailing.equalToSuperview().offset(-12)
+            $0.leading.equalToSuperview().offset(12).priority(900)
+            $0.trailing.equalToSuperview().offset(-12).priority(900)
             $0.top.bottom.equalToSuperview()
         }
         
@@ -59,7 +59,7 @@ private extension NormalPopoverCell {
         iconImageView.setContentHuggingPriority(260, for: .horizontal)
         
         descriptionLabel.snp.makeConstraints {
-            $0.leading.equalTo(iconImageView.snp.trailing).offset(12)
+            $0.leading.equalTo(iconImageView.snp.trailing).offset(12).priority(900)
             $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview()
         }
@@ -78,8 +78,8 @@ private extension NormalPopoverCell {
         lineView.snp.makeConstraints {
             $0.height.equalTo(1)
             $0.bottom.equalToSuperview()
-            $0.leading.equalToSuperview().offset(12)
-            $0.trailing.equalToSuperview().offset(-12)
+            $0.leading.equalToSuperview().offset(12).priority(900)
+            $0.trailing.equalToSuperview().offset(-12).priority(900)
         }
     }
     

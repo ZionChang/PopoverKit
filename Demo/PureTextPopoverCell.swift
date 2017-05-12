@@ -53,10 +53,10 @@ private extension PureTextPopoverCell {
         
         lineView.snp.makeConstraints {
             $0.height.equalTo(1)
-            $0.width.equalTo(86)
+            $0.width.equalTo(86).priority(900)
             $0.bottom.equalToSuperview()
-            $0.leading.equalToSuperview().offset(12)
-            $0.trailing.equalToSuperview().offset(-12)
+            $0.leading.equalToSuperview().offset(12).priority(900)
+            $0.trailing.equalToSuperview().offset(-12).priority(900)
         }
     }
  
