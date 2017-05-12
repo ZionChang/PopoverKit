@@ -241,6 +241,18 @@ open class PopoverPresentationController: UIPresentationController {
         backgroundView.frame = backgroundViewRect
     }
     
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { (context) in
+            self.presentedView?.frame = self.frameOfPresentedViewInContainerView
+            self.backgroundView.frame = self.backgroundViewRect
+        }, completion: nil)
+    }
+    
+    open override func containerViewDidLayoutSubviews() {
+        super.containerViewDidLayoutSubviews()
+    }
+    
     override open func dismissalTransitionWillBegin() {
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { (_) in
             self.dimmingView.alpha = 0
