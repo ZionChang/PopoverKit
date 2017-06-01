@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nf6-lu-EkW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nf6-lu-EkW">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,16 +51,25 @@
                                     <action selector="didClickRightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejX-LK-BOs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwl-y2-aBK">
+                                <rect key="frame" x="357" y="497" width="54" height="30"/>
+                                <state key="normal" title="Custom"/>
+                                <connections>
+                                    <action selector="didClickCustomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zV1-Hc-Ftx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="l0f-wb-YgD" secondAttribute="trailing" constant="40" id="8Gb-mR-Ch5"/>
                             <constraint firstItem="FRw-aD-Oa4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="A1f-sv-FsO"/>
                             <constraint firstItem="FRw-aD-Oa4" firstAttribute="leading" secondItem="GNh-BC-IC9" secondAttribute="leading" id="DfI-fx-YEy"/>
+                            <constraint firstItem="Hwl-y2-aBK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E0V-Jx-yhF"/>
                             <constraint firstItem="FRw-aD-Oa4" firstAttribute="baseline" secondItem="l0f-wb-YgD" secondAttribute="baseline" id="JaK-cJ-A82"/>
                             <constraint firstItem="l0f-wb-YgD" firstAttribute="trailing" secondItem="xFs-vC-6Vg" secondAttribute="trailing" id="RQB-9v-bdj"/>
                             <constraint firstItem="FRw-aD-Oa4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="TiQ-Yz-cjg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GNh-BC-IC9" secondAttribute="bottom" constant="64" id="UTu-Mb-GjP"/>
+                            <constraint firstItem="Hwl-y2-aBK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n4T-8J-QKd"/>
                             <constraint firstItem="GNh-BC-IC9" firstAttribute="baseline" secondItem="xFs-vC-6Vg" secondAttribute="baseline" id="vYs-dJ-rpa"/>
                         </constraints>
                     </view>
