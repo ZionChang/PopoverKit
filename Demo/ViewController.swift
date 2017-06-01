@@ -11,22 +11,24 @@ import PopoverKit
 
 class ViewController: UIViewController {
     
+    let sortByDate = PureTitleModel(title: "按时间排序")
+    let sortBySize = PureTitleModel(title: "按大小排序")
+    let edit = NormalModel(iconName: "ic_note_edit", description: "编辑")
+    let delete = NormalModel(iconName: "ic_note_delete", description: "删除")
+    
     @IBAction func didClickAddItem(_ sender: UIBarButtonItem) {
-        let vc = PopoverTableViewController(items: [.sortByDate, .sortByDirectory], selectedItemIndex: 0)
-        vc.modalPresentationStyle = .custom
-        vc.transitioningDelegate = pop.transitioningDelegate
+        
+        let vc = PopoverTableViewController(items: [sortByDate, sortBySize])
+        vc.pop.isNeedPopover = true
         vc.pop.popoverPresentationController?.barButtonItem = sender
         vc.pop.popoverPresentationController?.arrowPointY = self.navigationController?.navigationBar.frame.maxY
         vc.delegate = self
-        PopoverConfiguration.shared.animation = .alpha
-        PopoverConfiguration.shared.showDimmingView = false
-        PopoverConfiguration.shared.backgroundColor = UIColor.lightGray
         present(vc, animated: true, completion: nil)
+        
     }
     
     @IBAction func didClickUpButton(_ sender: UIButton) {
-        PopoverConfiguration.shared.restoreDefalut()
-        let vc = PopoverTableViewController(items: [.refresh, .adjustFontSize(.large)])
+        let vc = PopoverTableViewController(items: [sortByDate, sortBySize])
         vc.pop.isNeedPopover = true
         vc.pop.popoverPresentationController?.sourceView = sender
         vc.pop.popoverPresentationController?.sourceRect = sender.bounds
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didClickDownButton(_ sender: UIButton) {
-        let vc = PopoverTableViewController(items: [.edit, .delete])
+        let vc = PopoverTableViewController(items: [edit, delete, sortByDate])
         vc.pop.isNeedPopover = true
         vc.pop.popoverPresentationController?.sourceView = sender
         vc.pop.popoverPresentationController?.sourceRect = sender.bounds
@@ -46,7 +48,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didClickLeftButton(_ sender: UIButton) {
-        let vc = PopoverTableViewController(items: [.openInSafari, .refresh, .share, .adjustFontSize(.large)])
+        let vc = PopoverTableViewController(items: [edit, delete])
         vc.pop.isNeedPopover = true
         vc.pop.popoverPresentationController?.sourceView = sender
         vc.pop.popoverPresentationController?.sourceRect = sender.bounds
@@ -56,14 +58,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didClickRightButton(_ sender: UIButton) {
-        let vc = PopoverTableViewController(items: [.openInSafari, .refresh, .share, .adjustFontSize(.large)])
+        let vc = PopoverTableViewController(items: [edit, delete])
         vc.pop.isNeedPopover = true
         vc.pop.popoverPresentationController?.sourceView = sender
         vc.pop.popoverPresentationController?.sourceRect = sender.bounds
         vc.pop.popoverPresentationController?.arrowDirection = .right
         vc.delegate = self
         present(vc, animated: true, completion: nil)
-        
     }
     
     
@@ -72,14 +73,8 @@ class ViewController: UIViewController {
 // MARK: - PopoverTableViewControllerDelegate
 extension ViewController: PopoverTableViewControllerDelegate {
     
-    func didClick(item: PopoverTableViewController.Item, in vc: PopoverTableViewController) {
-        dismiss(animated: true, completion: nil)
-        print("archerzz: ", #function, #line, type(of: self))
-    }
-    
-    func didClick(ajustFontType: PopoverTableViewController.AdjustFontType, in vc: PopoverTableViewController) {
-        dismiss(animated: true, completion: nil)
-        print("archerzz: ", #function, #line, type(of: self))
+    func didSelectRow(at indexPath: IndexPath, in vc: PopoverTableViewController) {
+        print("indexPath: ", indexPath, #function, #line, type(of: self))
     }
     
 }

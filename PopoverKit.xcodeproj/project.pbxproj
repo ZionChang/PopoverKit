@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2C556C1EBF4DA100E31783 /* AjustFontPopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55611EBF4DA100E31783 /* AjustFontPopoverCell.swift */; };
 		3A2C556D1EBF4DA100E31783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55621EBF4DA100E31783 /* AppDelegate.swift */; };
 		3A2C556E1EBF4DA100E31783 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55631EBF4DA100E31783 /* Info.plist */; };
-		3A2C556F1EBF4DA100E31783 /* NormalPopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55641EBF4DA100E31783 /* NormalPopoverCell.swift */; };
-		3A2C55701EBF4DA100E31783 /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55651EBF4DA100E31783 /* PopoverTableViewController.swift */; };
-		3A2C55711EBF4DA100E31783 /* PureTextPopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55661EBF4DA100E31783 /* PureTextPopoverCell.swift */; };
-		3A2C55721EBF4DA100E31783 /* ReusableCellHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55671EBF4DA100E31783 /* ReusableCellHandle.swift */; };
-		3A2C55731EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55681EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift */; };
-		3A2C55741EBF4DA100E31783 /* UIColor+BooklnUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C55691EBF4DA100E31783 /* UIColor+BooklnUI.swift */; };
-		3A2C55751EBF4DA100E31783 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C556A1EBF4DA100E31783 /* UIColor+Extension.swift */; };
 		3A2C55761EBF4DA100E31783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C556B1EBF4DA100E31783 /* ViewController.swift */; };
 		3A2C557B1EBF4DEA00E31783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55771EBF4DEA00E31783 /* LaunchScreen.storyboard */; };
 		3A2C557C1EBF4DEA00E31783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C55791EBF4DEA00E31783 /* Main.storyboard */; };
 		3A2C557E1EBF4E0C00E31783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C557D1EBF4E0C00E31783 /* Assets.xcassets */; };
+		3A3245F31EDEB6BC00A8DC61 /* PopoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3245EB1EDEB6BC00A8DC61 /* PopoverModel.swift */; };
+		3A3245FD1EDEB78D00A8DC61 /* PopoverPureTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3245FB1EDEB78D00A8DC61 /* PopoverPureTitleCell.swift */; };
+		3A3245FE1EDEB78D00A8DC61 /* PopoverPureTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3245FC1EDEB78D00A8DC61 /* PopoverPureTitleCell.xib */; };
+		3A3246031EDEB90300A8DC61 /* PopoverNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3246011EDEB90300A8DC61 /* PopoverNormalCell.swift */; };
+		3A3246041EDEB90300A8DC61 /* PopoverNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3246021EDEB90300A8DC61 /* PopoverNormalCell.xib */; };
+		3A3246061EDEBC3900A8DC61 /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3246051EDEBC3900A8DC61 /* PopoverTableViewController.swift */; };
 		3A4C68311EBF493700C1FECF /* Popover+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C68281EBF493700C1FECF /* Popover+UIView.swift */; };
 		3A4C68321EBF493700C1FECF /* Popover+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C68291EBF493700C1FECF /* Popover+UIViewController.swift */; };
 		3A4C68331EBF493700C1FECF /* PopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C682A1EBF493700C1FECF /* PopoverBackgroundView.swift */; };
@@ -49,20 +47,18 @@
 /* Begin PBXFileReference section */
 		319130854AB9CE963E9E5639 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		3A2C554F1EBF4CCB00E31783 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A2C55611EBF4DA100E31783 /* AjustFontPopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustFontPopoverCell.swift; sourceTree = "<group>"; };
 		3A2C55621EBF4DA100E31783 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A2C55631EBF4DA100E31783 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A2C55641EBF4DA100E31783 /* NormalPopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalPopoverCell.swift; sourceTree = "<group>"; };
-		3A2C55651EBF4DA100E31783 /* PopoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
-		3A2C55661EBF4DA100E31783 /* PureTextPopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PureTextPopoverCell.swift; sourceTree = "<group>"; };
-		3A2C55671EBF4DA100E31783 /* ReusableCellHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellHandle.swift; sourceTree = "<group>"; };
-		3A2C55681EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedBackgroundBottomLinePresenter.swift; sourceTree = "<group>"; };
-		3A2C55691EBF4DA100E31783 /* UIColor+BooklnUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+BooklnUI.swift"; sourceTree = "<group>"; };
-		3A2C556A1EBF4DA100E31783 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3A2C556B1EBF4DA100E31783 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A2C55781EBF4DEA00E31783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A2C557A1EBF4DEA00E31783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A2C557D1EBF4E0C00E31783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A3245EB1EDEB6BC00A8DC61 /* PopoverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverModel.swift; sourceTree = "<group>"; };
+		3A3245FB1EDEB78D00A8DC61 /* PopoverPureTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPureTitleCell.swift; sourceTree = "<group>"; };
+		3A3245FC1EDEB78D00A8DC61 /* PopoverPureTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverPureTitleCell.xib; sourceTree = "<group>"; };
+		3A3246011EDEB90300A8DC61 /* PopoverNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverNormalCell.swift; sourceTree = "<group>"; };
+		3A3246021EDEB90300A8DC61 /* PopoverNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverNormalCell.xib; sourceTree = "<group>"; };
+		3A3246051EDEBC3900A8DC61 /* PopoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
 		3A4C680D1EBF48FF00C1FECF /* PopoverKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopoverKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4C68271EBF493700C1FECF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4C68281EBF493700C1FECF /* Popover+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Popover+UIView.swift"; sourceTree = "<group>"; };
@@ -102,19 +98,24 @@
 				3A2C557D1EBF4E0C00E31783 /* Assets.xcassets */,
 				3A2C55771EBF4DEA00E31783 /* LaunchScreen.storyboard */,
 				3A2C55791EBF4DEA00E31783 /* Main.storyboard */,
-				3A2C55611EBF4DA100E31783 /* AjustFontPopoverCell.swift */,
 				3A2C55621EBF4DA100E31783 /* AppDelegate.swift */,
 				3A2C55631EBF4DA100E31783 /* Info.plist */,
-				3A2C55641EBF4DA100E31783 /* NormalPopoverCell.swift */,
-				3A2C55651EBF4DA100E31783 /* PopoverTableViewController.swift */,
-				3A2C55661EBF4DA100E31783 /* PureTextPopoverCell.swift */,
-				3A2C55671EBF4DA100E31783 /* ReusableCellHandle.swift */,
-				3A2C55681EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift */,
-				3A2C55691EBF4DA100E31783 /* UIColor+BooklnUI.swift */,
-				3A2C556A1EBF4DA100E31783 /* UIColor+Extension.swift */,
 				3A2C556B1EBF4DA100E31783 /* ViewController.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		3A3245E81EDEB6BC00A8DC61 /* PopoverTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A3245EB1EDEB6BC00A8DC61 /* PopoverModel.swift */,
+				3A3245FB1EDEB78D00A8DC61 /* PopoverPureTitleCell.swift */,
+				3A3245FC1EDEB78D00A8DC61 /* PopoverPureTitleCell.xib */,
+				3A3246011EDEB90300A8DC61 /* PopoverNormalCell.swift */,
+				3A3246021EDEB90300A8DC61 /* PopoverNormalCell.xib */,
+				3A3246051EDEBC3900A8DC61 /* PopoverTableViewController.swift */,
+			);
+			path = PopoverTableViewController;
 			sourceTree = "<group>";
 		};
 		3A4C68011EBF48E000C1FECF = {
@@ -141,14 +142,15 @@
 			isa = PBXGroup;
 			children = (
 				3A4C68271EBF493700C1FECF /* Info.plist */,
+				3A4C682D1EBF493700C1FECF /* PopoverKit.h */,
 				3A4C68281EBF493700C1FECF /* Popover+UIView.swift */,
 				3A4C68291EBF493700C1FECF /* Popover+UIViewController.swift */,
 				3A4C682A1EBF493700C1FECF /* PopoverBackgroundView.swift */,
 				3A4C682B1EBF493700C1FECF /* PopoverCompatible.swift */,
 				3A4C682C1EBF493700C1FECF /* PopoverConfiguration.swift */,
-				3A4C682D1EBF493700C1FECF /* PopoverKit.h */,
 				3A4C682E1EBF493700C1FECF /* PopoverPresentationController.swift */,
 				3A4C682F1EBF493700C1FECF /* PopoverTransitioningDelegate.swift */,
+				3A3245E81EDEB6BC00A8DC61 /* PopoverTableViewController */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -281,6 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3246041EDEB90300A8DC61 /* PopoverNormalCell.xib in Resources */,
+				3A3245FE1EDEB78D00A8DC61 /* PopoverPureTitleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,15 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2C55761EBF4DA100E31783 /* ViewController.swift in Sources */,
-				3A2C55721EBF4DA100E31783 /* ReusableCellHandle.swift in Sources */,
 				3A2C556D1EBF4DA100E31783 /* AppDelegate.swift in Sources */,
-				3A2C55731EBF4DA100E31783 /* SelectedBackgroundBottomLinePresenter.swift in Sources */,
-				3A2C55751EBF4DA100E31783 /* UIColor+Extension.swift in Sources */,
-				3A2C55711EBF4DA100E31783 /* PureTextPopoverCell.swift in Sources */,
-				3A2C55741EBF4DA100E31783 /* UIColor+BooklnUI.swift in Sources */,
-				3A2C556F1EBF4DA100E31783 /* NormalPopoverCell.swift in Sources */,
-				3A2C55701EBF4DA100E31783 /* PopoverTableViewController.swift in Sources */,
-				3A2C556C1EBF4DA100E31783 /* AjustFontPopoverCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +353,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4C68351EBF493700C1FECF /* PopoverConfiguration.swift in Sources */,
+				3A3245F31EDEB6BC00A8DC61 /* PopoverModel.swift in Sources */,
 				3A4C68331EBF493700C1FECF /* PopoverBackgroundView.swift in Sources */,
+				3A3245FD1EDEB78D00A8DC61 /* PopoverPureTitleCell.swift in Sources */,
 				3A4C68381EBF493700C1FECF /* PopoverTransitioningDelegate.swift in Sources */,
 				3A4C68341EBF493700C1FECF /* PopoverCompatible.swift in Sources */,
+				3A3246031EDEB90300A8DC61 /* PopoverNormalCell.swift in Sources */,
 				3A4C68321EBF493700C1FECF /* Popover+UIViewController.swift in Sources */,
+				3A3246061EDEBC3900A8DC61 /* PopoverTableViewController.swift in Sources */,
 				3A4C68311EBF493700C1FECF /* Popover+UIView.swift in Sources */,
 				3A4C68371EBF493700C1FECF /* PopoverPresentationController.swift in Sources */,
 			);

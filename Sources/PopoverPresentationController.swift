@@ -25,7 +25,9 @@ open class PopoverPresentationController: UIPresentationController {
         dimmingView.backgroundColor = PopoverConfiguration.shared.dimmingViewColor
         let tap = UITapGestureRecognizer(target: self, action: #selector(dimmingViewTapped(_:)))
         dimmingView.addGestureRecognizer(tap)
-        dimmingView.isHidden = !PopoverConfiguration.shared.showDimmingView
+        if !PopoverConfiguration.shared.showDimmingView {
+            dimmingView.backgroundColor = UIColor.clear
+        }
         return dimmingView
         }()
     
@@ -191,8 +193,6 @@ open class PopoverPresentationController: UIPresentationController {
         guard let containerView = containerView else {
             return
         }
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dimmingViewTapped(_:)))
-        containerView.addGestureRecognizer(tap)
         dimmingView.frame = containerView.bounds
         dimmingView.alpha = 0
         containerView.insertSubview(backgroundView, at: 0)
@@ -279,7 +279,7 @@ open class PopoverPresentationController: UIPresentationController {
 private extension PopoverPresentationController {
     
     @objc func dimmingViewTapped(_ gesture: UITapGestureRecognizer) {
-        guard gesture.state == .recognized else {
+        guard gesture.state == .ended else {
             return
         }
         presentingViewController.dismiss(animated: true, completion: nil)
