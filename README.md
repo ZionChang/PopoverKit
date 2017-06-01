@@ -12,7 +12,7 @@ PopoverKit
 
 ## Description
 
-![](https://github.com/eilianlove/PopoverKit/blob/master/Demo/demo.gif)
+![](https://github.com/ZionChang/PopoverKit/blob/master/Demo/demo.gif)
 
 
 
@@ -47,6 +47,58 @@ presentationController?.sourceRect = sourceRect
 ```
 
 As you see, so esay, just like system
+
+## PopoverTableViewController
+
+* Init your model(**PureTitleModel** or **NormalModel**)
+
+```swift
+let sortByDate = PureTitleModel(title: "按时间排序")
+let sortBySize = PureTitleModel(title: "按大小排序")
+let edit = NormalModel(iconName: "ic_note_edit", description: "编辑")
+let delete = NormalModel(iconName: "ic_note_delete", description: "删除")
+
+```
+
+* Init **PopoverTableViewController**
+
+```swift
+let vc = PopoverTableViewController(items: [sortByDate, sortBySize])
+vc.pop.isNeedPopover = true
+vc.pop.popoverPresentationController?.barButtonItem = sender
+vc.pop.popoverPresentationController?.arrowPointY = self.navigationController?.navigationBar.frame.maxY
+vc.delegate = self
+present(vc, animated: true, completion: nil)
+```
+
+* Or custom your own model(**PopoverCellConfiguration**)
+
+```swift
+/// Custom
+struct CustomModel: PopoverCellConfiguration {
+    
+	public var width: CGFloat {
+	    let cell = AjustFontPopoverCell()
+	    config(cell: cell)
+	    let width = cell.systemLayoutSizeFitting(UILayoutFittingCompressedSize).width
+	    return width
+	}
+	    
+	public var resuable: PopoverCellResuable.Type {
+	    return AjustFontPopoverCell.self
+	}
+	    
+	public func config(cell: UITableViewCell) {
+	    guard let cell  = cell as? AjustFontPopoverCell else {
+	        return
+	    }
+	    // config delegate...
+	}
+    
+    
+}
+```
+
 
 ## Customization
 
@@ -100,7 +152,7 @@ You can use [CocoaPods](http://cocoapods.org/) to install `PopoverKit` by adding
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
-pod 'PopoverKit', '~> 0.0.1'
+pod 'PopoverKit', '~> 0.1.0'
 ```
 
 Then, run the following command:
