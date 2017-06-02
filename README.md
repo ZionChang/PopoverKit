@@ -134,7 +134,7 @@ public enum PopoverConfiguration.Animation {
 Create a `Cartfile` that lists the framework. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/PopoverKit.framework` to an iOS project.
 
 ```ruby
-github "eilianlove/PopoverKit"
+github "ZionChang/PopoverKit"
 ```
 
 Run `carthage update` to build the framework and drag the built `PopoverKit.framework` into your Xcode project.
