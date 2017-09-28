@@ -126,6 +126,7 @@ public enum PopoverConfiguration.Animation {
 
 - iOS 8.0+
 - Xcode 8.0+
+- Swift4
 
 
 ## Installation
@@ -152,7 +153,7 @@ You can use [CocoaPods](http://cocoapods.org/) to install `PopoverKit` by adding
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
-pod 'PopoverKit', '~> 0.1.0'
+pod 'PopoverKit', '~> 0.2.0'
 ```
 
 Then, run the following command:
@@ -171,7 +172,7 @@ $ pod install
 
 
 
-[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[swift-image]:https://img.shields.io/badge/swift-4.0-orange.svg
 [swift-url]: https://swift.org/
 
 ### License
