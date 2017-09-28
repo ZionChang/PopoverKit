@@ -22,12 +22,15 @@
 
 import Foundation
 import CoreGraphics
+#if os(iOS) || os(tvOS)
+  import UIKit.UIGeometry
+#endif
 
 public protocol Then {}
 
 extension Then where Self: Any {
 
-  /// Makes it available to set properties with closures just after initializing.
+  /// Makes it available to set properties with closures just after initializing and copying the value types.
   ///
   ///     let frame = CGRect().with {
   ///       $0.origin.x = 10
@@ -74,3 +77,9 @@ extension CGPoint: Then {}
 extension CGRect: Then {}
 extension CGSize: Then {}
 extension CGVector: Then {}
+
+#if os(iOS) || os(tvOS)
+  extension UIEdgeInsets: Then {}
+  extension UIOffset: Then {}
+  extension UIRectEdge: Then {}
+#endif

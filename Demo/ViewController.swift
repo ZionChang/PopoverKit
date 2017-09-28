@@ -25,7 +25,7 @@ struct CustomModel: PopoverCellConfiguration {
     }
     
     public func config(cell: UITableViewCell) {
-        guard let cell  = cell as? AjustFontPopoverCell else {
+        guard cell is AjustFontPopoverCell else {
             return
         }
         // config delegate...

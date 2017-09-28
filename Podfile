@@ -2,6 +2,6 @@
 target 'Demo' do  
   use_frameworks!
   pod 'SnapKit'
-  pod 'Then'	  
+  pod 'Then'
 
 end
