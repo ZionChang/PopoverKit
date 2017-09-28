@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PopoverKit"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "A lightweight, swift library for pop your viewcontroll."
   s.homepage     = "https://github.com/ZionChang/PopoverKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
